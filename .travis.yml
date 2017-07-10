@@ -4,6 +4,6 @@ deploy:
   provider: heroku
   api_key:
     secure: iAw8Z6gRqnw3hqlbFAPsf32nwYcsA2IwENsNrgzqcADiBpCCBlR+92s0dv+aBNoCd0poKAfVi/EcNhw3sI1o2QB+W5Kgj3OC9snPAU2gk8dsB4B8ttXuhhJoIeYB3P7nb9LACfuAr/+B0Q3ifX3mP5bqq9jW+bFp7W0Ch9BTOxkF6dWhFw2DyBIH18GcX86Z6/YqSYjAWUKh5p/v9CjBogh4xtBzAMMyfYEGKbgdCSum86YEnzLkVCZOj1tjvVt4LISnOYg5iCs7/+cdC2+R+77a1YEZWShjEa5Uo6tYcnkJ52Zg7BSU9JcHhVZcI8DjPBqHeIDPSIQdR34ehoe/RpYkSLlpy3UqTVd1yCPG7jQjW9gW5vH/vZGnpPlQaviB77qnI137+qqygyqz/2wXrIbujf2akIg7HoS2j6U9jSBp5DPcnbkwtsKsBrW2y7vxFBJYKGh7SGFC5HbqoG6MkL7/jdnadcoKgWmBJDMdBpBVb9B9kgcrsR06PUDvXvF0pfNQC7Ma5//hgfN6Pk4gRk6nD0OxdMyMtOV9jLI+50DbRpiVRKrZYFmqERi4l/Kpk7A5HzfgwVHgRJjOx/TYm5jHeerwPVoxh2jzisDQ0I9MgoOGmJHBa9GlIVYwah0W0QGa6udOeQP+oqs043rbfu48X9dZ7LwJTxBYUdAmeaE=
-  app: eaterCheater
+  app: hidden-brook-30751
   on:
     repo: aaronleebrooks/eaterCheater
