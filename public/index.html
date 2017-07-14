@@ -2,8 +2,44 @@
 <html>
 <head>
 	<title>EaterCheater</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/home/aaron/thinkful/projects/EaterCheater/node_modules/vex-js/dist/css/vex.css" />
+	<link rel="stylesheet" href="/home/aaron/thinkful/projects/EaterCheater/node_modules/vex-js/dist/css/vex-theme-os.css" />
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<p>Hello World</p>
+	<header>
+		<h1>Hello World</h1>
+		<button id="login-modal">Login</button>
+		<button id="signup-modal">Sign Up!</button>
+	</header>
+<!-- 	<form id="login form">
+		<input type="text" name="login" id="username" placeholder="Username">
+		<input type="password" name="password" id="password" placeholder="Password">
+		<input type="submit" name="submit">
+	</form> -->
+	<!-- <a href="signup.html"><button>Sign Up!</button></a>	 -->
+	<nav>
+
+	</nav>
+
+	<form id="searchForm">
+		<input type="text" name="Search field" id="searchField">
+		<select id="textField">
+			<option value="restaurant">Restaurant</option>
+			<option value="foodType">Cuisine</option>
+			<option value="discountType">Discount</option>
+		</select>
+		<input type="submit" name="Go!">
+		<button name="My Favorites" value="favorite" id="favoriteButton">My Favorites</button>
+	</form>
+
+	<main>
+		<div id="searchResults"></div>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+		<script src="/home/aaron/thinkful/projects/EaterCheater/node_modules/vex-js/dist/js/vex.combined.js"></script>
+	<script>vex.defaultOptions.className = 'vex-theme-os'</script>
 </body>
 </html>
