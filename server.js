@@ -1,10 +1,3 @@
-// var express = require('express');
-// var app = express();
-// app.use(express.static('public'));
-// app.listen(process.env.PORT || 8080);
-
-// exports.app = app;
-
 const bodyParser = require('body-parser');
 const express = require('express');
 const mongoose = require('mongoose');
@@ -18,6 +11,8 @@ const app = express();
 
 app.use(morgan('common'));
 app.use(bodyParser.json());
+
+mongoose.Promise= global.Promise;
 
 app.get('/discounts', (req, res) => {
 	Discounts
@@ -34,9 +29,9 @@ app.get('/discounts', (req, res) => {
 
 app.get('/discounts/:id', (req, res) => {
 	Discounts
-		findById(req.params.id)
+		.findById(req.params.id)
 		.exec()
-		.then(discount = res.json(discount.apiRepr()))
+		.then(discount => res.json(discount.apiRepr()))
 		.catch(err => {
 			console.error(err);
 			res.status(500).json({error: 'something went terribly wrong'});
@@ -172,6 +167,7 @@ let server;
 function runServer(databaseUrl=DATABASE_URL, port=PORT) {
   return new Promise((resolve, reject) => {
     mongoose.connect(databaseUrl, err => {
+      useMongoClient: true
       if (err) {
         return reject(err);
       }
