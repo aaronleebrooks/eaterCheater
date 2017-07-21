@@ -1,0 +1,18 @@
+	{
+		"id": "129312",
+		"username": "demo",
+		"password": "demo",
+		"favorites": ["109865"]
+	}
+	{
+		"id": "674342",
+		"username": "demo2",
+		"password": "demo2",
+		"favorites": ["109865, 918234"]
+	}
+	{
+		"id": "091724",
+		"username": "demo3",
+		"password": "demo3",
+		"favorites": ["109877"]
+	}

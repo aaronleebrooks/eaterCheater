@@ -1,0 +1,160 @@
+	{
+		"id": "109929",
+		"restaurant": "Papa John's",
+		"discount": "$5 Large One Topping Pizza on Monday Nights",
+		"foodType": "pizza",
+		"discountType": "weekly",
+		"favorite": "false"
+	}
+	{
+		"id": "103423",
+		"restaurant": "Dominoes",
+		"discount": "$5 Large One Topping Pizza on Tuesday Nights",
+		"foodType": "pizza",
+		"discountType": "weekly",
+		"favorite": "false"
+	}
+	{
+		"id": "113943",
+		"restaurant": "Pizza Hut",
+		"discount": "$5 Large One Topping Pizza on Monday Nights",
+		"foodType": "pizza",
+		"discountType": "weekly",
+		"favorite": "false"
+	}
+	{
+		"id": "101234",
+		"restaurant": "Papa John's",
+		"discount": "50% off Regular Menu Items with promo code 'PEPSI50'",
+		"foodType": "pizza",
+		"discountType": "promo code",
+		"favorite": "false"
+	}
+	{
+		"id": "102423",
+		"restaurant": "Wingster",
+		"discount": "Free Delivery with promocode 'DAWGS'",
+		"foodType": "asian",
+		"discountType": "promo code",
+		"favorite": "false"
+	}
+	{
+		"id": "107868",
+		"restaurant": "Waffle House",
+		"discount": "Free Hasbrowns with Hooked app",
+		"foodType": "breakfast",
+		"discountType": "app",
+		"favorite": "false"
+	}
+	{
+		"id": "109653",
+		"restaurant": "South Kitchen and Bar",
+		"discount": "$10 lunch sandwiches with Hooked app",
+		"foodType": "sandwiches",
+		"discountType": "app",
+		"favorite": "false"
+	}
+	{
+		"id": "109543",
+		"restaurant": "Lazy Shopper",
+		"discount": "$5 off with $5 Tip",
+		"foodType": "sandwiches",
+		"discountType": "secret",
+		"favorite": "true"
+	}
+	{
+		"id": "109865",
+		"restaurant": "Athens Bagel Company",
+		"discount": "Free Bagel with the Purchase of a Dozen Bagels if you Share and Tag on Social Media",
+		"foodType": "breakfast",
+		"discountType": "social",
+		"favorite": "false"
+	}
+	{
+		"id": "109877",
+		"restaurant": "Papa John's",
+		"discount": "Buy One Cheese Dip, Get One Free",
+		"foodType": "pizza",
+		"discountType": "secret",
+		"favorite": "false"
+	}
+		{
+		"id": "108654",
+		"restaurant": "Blind Pig Tavern",
+		"discount": "Double sized fries if you ask",
+		"foodType": "bar",
+		"discountType": "secret",
+		"favorite": "false"
+	}
+	{
+		"id": "101912",
+		"restaurant": "Taco Bell",
+		"discount": "Free item of your choice every fifth visit",
+		"foodType": "fast food",
+		"discountType": "app",
+		"favorite": "false"
+	}
+	{
+		"id": "912301",
+		"restaurant": "Cookout",
+		"discount": "$3 trays on Sunday nights",
+		"foodType": "fast food",
+		"discountType": "weekly",
+		"favorite": "false"
+	}
+	{
+		"id": "523452",
+		"restaurant": "Cheeseburger Eddy's",
+		"discount": "25 cent Wing Wednesdays",
+		"foodType": "wings",
+		"discountType": "weekly",
+		"favorite": "false"
+	}
+	{
+		"id": "918234",
+		"restaurant": "Athens Bagel Company",
+		"discount": "$2 off all lunch sandwiches on Fridays",
+		"foodType": "breakfast",
+		"discountType": "weekly",
+		"favorite": "false"
+	}
+	{
+		"id": "167473",
+		"restaurant": "Waffle House",
+		"discount": "Call ahead and get 10% off your order",
+		"foodType": "breakfast",
+		"discountType": "secret",
+		"favorite": "false"
+	}
+	{
+		"id": "987654",
+		"restaurant": "Mucho Queso",
+		"discount": "Every queso is a large queso on Tuesdays",
+		"foodType": "latin",
+		"discountType": "weekly",
+		"favorite": "false"
+	}
+	{
+		"id": "098765",
+		"restaurant": "Utage",
+		"discount": "Buy one large sashimi roll, get another at half price if you share on social media",
+		"foodType": "asian",
+		"discountType": "social",
+		"favorite": "false"
+	}
+	{
+		"id": "765432",
+		"restaurant": "Dominoes",
+		"discount": "Free cheesesticks with the Hooked app",
+		"foodType": "pizza",
+		"discountType": "app",
+		"favorite": "false"
+	}
+	{
+		"id": "102938",
+		"restaurant": "Saucehouse",
+		"discount": "25 cent wing nights on Tuesdays",
+		"foodType": "wings",
+		"discountType": "weekly",
+		"favorite": "false"
+	}

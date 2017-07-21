@@ -1,0 +1,32 @@
+header {
+	background-color: green;
+	display: inline-block;
+	width: 85%;
+	margin:15px auto;
+	padding: 15px 15px;
+}
+
+header h1 {
+	display: inline-block;
+	float: left;
+}
+
+header button {
+	display: inline-block;
+	float: right;
+	margin: 25px 15px auto;
+}
+
+.searchCard {
+	background-color: green;
+	width: 65%;
+	margin: 25px 15px auto;
+}
+
+#searchResults {
+	display: block;
+}
+
+.favoriteHeart {
+	width: 35px;
+}
