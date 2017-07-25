@@ -34,7 +34,7 @@ userSchema.methods.apiRepr = function() {
   };
 }
 
-const Discounts = mongoose.model('Discounts', discountSchema);
-const Users = mongoose.model('Users', userSchema);
+const Discounts = mongoose.model('Discounts', discountSchema, 'discountData');
+const Users = mongoose.model('Users', userSchema, 'userData');
 
 module.exports = {Discounts, Users};

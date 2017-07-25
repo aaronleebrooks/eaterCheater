@@ -2,6 +2,8 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
+const cors = require('cors');
+const assert = require('assert');
 
 const {DATABASE_URL, PORT} = require('./config');
 const {Discounts} = require('./models');
@@ -11,8 +13,19 @@ const app = express();
 
 app.use(morgan('common'));
 app.use(bodyParser.json());
+app.use(cors());
+
+app.use(function (req, res, next) {
+  res.header("Content-Type",'application/json');
+  next();
+});
+
+app.options('*', cors());
 
 mongoose.Promise= global.Promise;
+
+
+mongoose.Promise = require('bluebird');
 
 app.get('/discounts', (req, res) => {
 	Discounts
@@ -115,6 +128,7 @@ app.delete('/discounts/:id', (req, res) => {
 });
 
 app.put('/discounts/:id', (req, res) => {
+	console.log('put request is done');
   if (!(req.params.id && req.body.id && req.params.id === req.body.id)) {
     res.status(400).json({
       error: 'Request path id and request body id values must match'
@@ -128,13 +142,11 @@ app.put('/discounts/:id', (req, res) => {
       updated[field] = req.body[field];
     }
   });
-
-  Discounts
+  console.log(req.params.id);
+  assert.equal(Discounts
     .findByIdAndUpdate(req.params.id, {$set: updated}, {new: true})
-    .exec()
-    .then(updatedPost => res.status(201).json(updatedPost.apiRepr()))
-    .catch(err => res.status(500).json({message: 'Something went wrong'}));
-});
+    .exec().constructor, require('bluebird'));
+})
 
 app.put('/users/:id', (req, res) => {
   if (!(req.params.id && req.body.id && req.params.id === req.body.id)) {
@@ -155,7 +167,7 @@ app.put('/users/:id', (req, res) => {
     .findByIdAndUpdate(req.params.id, {$set: updated}, {new: true})
     .exec()
     .then(updatedPost => res.status(201).json(updatedPost.apiRepr()))
-    .catch(err => res.status(500).json({message: 'Something went wrong'}));
+    .catch(err => res.status(500).json({message: err}));
 });
 
 app.use('*', function(req, res) {
